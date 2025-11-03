@@ -10,6 +10,10 @@
     <img src="burgergif.gif" alt="Hamburguesa spinning" height="200" width="200">
     <form action="" id="calcularPrecio">
         <div>
+            <h2>Cantidad</h2>
+            <input type="number" name="cantidad" id="cantidad" value="1">
+        </div>
+        <div>
             <h2> Tamaño</h2>
             <label for="chico"> chico</label>
             <input type="radio" name="tam" id="chico">
@@ -69,6 +73,20 @@
             <label for="tomate">tocino(+$20.00)</label>
             <input type="checkbox" name="ingredientes" id="TocinoExtra">
             <br>
+        </div>
+        <div>
+            <label for="combo"> Quieres hacerlo combo? (Incluye refresco y papas)</label>
+            <select name="combo" id="combo">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div>
+            <button type="button">Precio</button>
+            <br>
+            <label for="total"> Total a pagar</label>
+            <br>
+            <input type="number" name="total" id="total" readonly>
         </div>
     </form>
     <script src="JavaScript.js"></script>
