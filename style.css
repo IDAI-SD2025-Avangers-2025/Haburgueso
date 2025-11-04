@@ -4,13 +4,24 @@ body {
     background-color: rgb(255, 232, 128);
 }
 img {
-    float: left;
+    float: right;
     display: block;
-}
-#calcularPrecio {
-    text-align: center;
 }
 
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+    background-color: bisque;
+    max-width:min-content;
+    margin: auto;
+    text-align: center;
+    padding: 5px 7px 5px 7px;
+    border: 1px solid black;
+    border-radius: 3px;
 }
