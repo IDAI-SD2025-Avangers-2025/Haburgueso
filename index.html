@@ -18,27 +18,27 @@
         <div>
             <h2> Tamaño</h2>
             <label for="chico"> chico ($100)</label>
-            <input type="radio" name="tam" id="chico" value="chico">
+            <input type="radio" name="tam" id="chico" value="chico" onclick="calcular()">
             <br>
             <label for="mediano"> mediano ($150)</label>
-            <input type="radio" name="tam" id="mediano" value="mediano">
+            <input type="radio" name="tam" id="mediano" value="mediano" onclick="calcular()">
             <br>
             <label for="grande"> grande ($200)</label>
-            <input type="radio" name="tam" id="grande" value="grande">
+            <input type="radio" name="tam" id="grande" value="grande" onclick="calcular()">
         </div>
         <div>
             <h2>Tipo de pan</h2>
             <label for="integral"> integral (+$15)</label>
-            <input type="radio" name="pan" id="integral" value="integral">
+            <input type="radio" name="pan" id="integral" value="integral" onclick="calcular()">
             <br>
             <label for="blanco"> blanco </label>
-            <input type="radio" name="pan" id="blanco" value="blanco">
+            <input type="radio" name="pan" id="blanco" value="blanco" onclick="calcular()">
             <br>
             <label for="papa"> papa (+$20)</label>
-            <input type="radio" name="pan" id="papa" value="papa">
+            <input type="radio" name="pan" id="papa" value="papa" onclick="calcular()">
             <br>
             <label for="parmesano"> parmesano (+$22)</label>
-            <input type="radio" name="pan" id="parmesano" value="parmesano">
+            <input type="radio" name="pan" id="parmesano" value="parmesano" onclick="calcular()">
         </div>
         <div>
             <h2>Ingredientes</h2>
@@ -67,30 +67,29 @@
             <input type="checkbox" name="ingredientes" id="quesoAmericano">
             <br>
             <label for="tomate">queso extra (+$15)</label>
-            <input type="checkbox" name="ingredientes" id="QuesoExtra">
+            <input type="checkbox" name="ingredientes" id="QuesoExtra" onclick="calcular()">
             <br>
             <label for="tomate">carne extra (+$30)</label>
-            <input type="checkbox" name="ingredientes" id="CarneExtra">
+            <input type="checkbox" name="ingredientes" id="CarneExtra" onclick="calcular()">
             <br>
             <label for="tomate">tocino(+$20)</label>
-            <input type="checkbox" name="ingredientes" id="TocinoExtra">
+            <input type="checkbox" name="ingredientes" id="TocinoExtra" onclick="calcular()">
             <br>
         </div>
         <div>
             <label for="combo"> Quieres hacerlo combo? (Incluye refresco y papas)</label>
-            <select name="combo" id="combo">
-                <option value="si">Si (+$65)</option>
+            <select name="combo" id="combo"  onchange="calcular()">
                 <option value="no">No</option>
+                <option value="si">Si (+$65)</option>
             </select>
         </div>
-        <div>
-            <button type="button" onclick="calcular()">Precio</button>
-            <br>
+        <div id="TOTALPAGAR">
             <label for="total"> Total a pagar</label>
             <br>
             <input type="number" name="total" id="total" readonly>
         </div>
     </form>
+    
     <script src="JavaScript.js"></script>
 </body>
 </html>

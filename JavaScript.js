@@ -16,7 +16,7 @@ function calcular() {
         total = 200;
     }
     else {
-        alert("Seleccione el tamaño de su hamburguesa");
+        return;
     }
 
     //TIPO PAN
@@ -33,7 +33,7 @@ function calcular() {
         total = total + 22;
     }
     else {
-        alert("Seleccione el tipo de pan");
+        return;
     }
     
     //INGREDIENTES
