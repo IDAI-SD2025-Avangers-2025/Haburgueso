@@ -1,7 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(255, 232, 128);
+    background-image: url(papas.gif);
+    background-size: cover;
 }
 img {
     float: right;
@@ -26,6 +27,7 @@ form {
     max-width:min-content;
     margin: auto;
     margin-top: 15px;
+    margin-bottom: 10px;
     text-align: center;
     padding: 5px 7px 5px 7px;
     border: 1px solid black;
@@ -33,5 +35,15 @@ form {
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+button {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin: 7px;
 }
