@@ -7,9 +7,14 @@ img {
     float: right;
     display: block;
 }
-
-h2 {
+h1, h2, h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 15px;
 }
 
 label {
@@ -20,8 +25,13 @@ form {
     background-color: bisque;
     max-width:min-content;
     margin: auto;
+    margin-top: 15px;
     text-align: center;
     padding: 5px 7px 5px 7px;
     border: 1px solid black;
     border-radius: 3px;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
